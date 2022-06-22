@@ -10,13 +10,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements View.OnClickListener{
 
     private final int duration = 3; // seconds
     private final int sampleRate = 8000;
     private final int numSamples = duration * sampleRate;
     private final double sample[] = new double[numSamples];
-    private final double freqOfTone = 440; // hz
+    private final double freqOfTone = 1000; // hz
 
     private final byte generatedSnd[] = new byte[2 * numSamples];
 
